@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(21, 21, 21);
+    color: whitesmoke;
+    width: 100%;
+}
+
+.cabecalho{
+    background-color:  rgb(47, 47, 47);
+
+}
+
+
+.projeto{
+    width: 25%;
+    height: 180px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.rodape{
+    height: 200px;
+    background-color:  rgb(47, 47, 47);
+
+}
