@@ -1,15 +1,83 @@
+<?php
+
+    $idUser = 1;
+
+    // ====================================================
+    // BUSCAR DADOS DO SOBRE
+    // ====================================================
+
+    $dadosSobre = null;
+
+    $sql = "
+        SELECT *
+        FROM sobre
+        WHERE usuario_id = ?
+    ";
+
+    $stmt = $conn->prepare($sql);
+
+    $stmt->bind_param("i", $idUser);
+
+    $stmt->execute();
+
+    $resultado = $stmt->get_result();
+
+    if ($resultado->num_rows > 0) {
+
+        $dadosSobre = $resultado->fetch_assoc();
+
+    }
+
+
+?>
+
+
 <div class="container">
-                    <div class="row">
 
-                        <div class="col-6 px-5 mt-5 mb-5">
-                            <h1 class="text-center mt-4">Olá, sou o Pedro Mello!</h1>
-                            <p class="mt-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        </div>
+    <div 
+        class="row align-items-center min-vh-100 mt-5"
+        id="sobre"
+    >
 
-                        <div class="col-4 mx-auto mt-4">
-                            <img src="./imgs/4k-homem-aranha-47cs2wu25eg7uwgm.jpg" width=300>
-                        </div>
+        <!-- TEXTO -->
+        <div class="col-md-5 px-4">
 
-                    </div>
-                </div>
+            <h1 class="mb-4">
+                <?php 
+                    echo $dadosSobre['titulo'] ?? 'Título Padrão';
+                ?>
+            </h1>
+
+            <p class="mb-3">
+                <?php 
+                    echo $dadosSobre['paragrafo1'] ?? 'Descrição Padrão';
+                ?>
+            </p>
+            </p>
+
+            <p>
+                <?php 
+                    echo $dadosSobre['paragrafo2'] ?? 'Descrição Padrão';
+                ?>
+            </p>
+
+        </div>
+
+        <!-- ESPAÇAMENTO CENTRAL -->
+        <div class="col-md-2"></div>
+
+        <!-- IMAGEM -->
+        <div class="col-md-5 d-flex justify-content-center">
+
+            <img 
+                src="<?= $dadosSobre['imagem'] ?? './imgs/noPfp.jpg' ?>"
+                class="pfp mb-4"
+
+                style="
+                    width: 350px;
+                    height: 350px;
+                    object-fit: cover;
+                "
+            >
+
+        </div>

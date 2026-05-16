@@ -11,9 +11,12 @@ body{
 
 .cabecalho{
     background-color:  rgb(47, 47, 47);
-
 }
 
+.form-control::placeholder{
+    color: rgb(160, 160, 160) !important;
+    opacity: 1;
+}
 
 .projeto{
     width: 25%;
@@ -23,7 +26,23 @@ body{
 }
 
 .rodape{
-    height: 200px;
-    background-color:  rgb(47, 47, 47);
+    background-color: rgb(47, 47, 47);
+    min-height: 220px;
+}
 
+.pfp{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.b{
+    color:blue;
 }

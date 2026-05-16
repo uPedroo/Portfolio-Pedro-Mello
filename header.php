@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +10,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="col-12">
+    <div class="container-fluid p-0">
 
-                <div class="col-12 d-flex flex-row cabecalho justify-content-between align-items-center mx-auto mb-5">
-                    <img class="ms-5" src="./imgs/4k-homem-aranha-47cs2wu25eg7uwgm.jpg" width=60>
-                    <div class="d-flex flex-row justify-content-between gap-5 p-3">
-                        <a><p class="mb-0">Sobre</p></a>
-                        <a><p class="mb-0">Habilidades</p></a>
-                        <a><p class="mb-0">Projetos</p></a>                 
-                    </div>
-                </div>
+    <div class="d-flex cabecalho justify-content-between align-items-center px-4 py-2">
+
+        <span>
+            <a href="index.php" class="text-decoration-none text-light fs-4">
+                Portfolio
+            </a>
+        </span> 
+
+        <div class="d-flex align-items-center gap-4">
+
+            <a href="index.php#sobre" class="text-decoration-none text-light">
+                Sobre
+            </a>
+
+            <a href="index.php#habilidades" class="text-decoration-none text-light">
+                Habilidades
+            </a>
+
+            <a href="index.php#projetos" class="text-decoration-none text-light">
+                Projetos
+            </a>
+
+                <a href="logins.php" class="btn btn-primary">
+                    Login
+                </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
