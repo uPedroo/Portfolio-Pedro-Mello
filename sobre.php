@@ -32,7 +32,7 @@
 ?>
 
 
-<div class="container">
+<section class="container" aria-labelledby="sobre-title">
 
     <div 
         class="row align-items-center min-vh-100 mt-5"
@@ -72,7 +72,8 @@
             <img 
                 src="<?= $dadosSobre['imagem'] ?? './imgs/noPfp.jpg' ?>"
                 class="pfp mb-4"
-
+                alt="Foto de perfil de Pedro Mello"
+                title="Pedro Mello - desenvolvedor web"
                 style="
                     width: 350px;
                     height: 350px;

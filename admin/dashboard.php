@@ -2,7 +2,7 @@
 
     session_start();
 
-    require_once('conexao.php');
+    require_once(__DIR__.'/../conexao.php');
 
     // Ideia, para mostrar cada portfolio no headeradmin ter a parte visualizacao, na qual rerideciona para o index com user_id no link e usar o metodo get nas index para ir
 

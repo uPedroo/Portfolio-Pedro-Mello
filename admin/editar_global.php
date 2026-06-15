@@ -14,7 +14,7 @@
  * MANTÉM SESSÃO: Não há risco de "headers already sent"
  */
 
-require_once('conexao.php');
+require_once(__DIR__.'/../conexao.php');
 
 $idUser = $_SESSION['user_id'];
 

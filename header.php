@@ -1,12 +1,17 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Portfólio profissional de Pedro Mello, desenvolvedor web em Caraguatatuba. Veja projetos, habilidades e formas de contato." />
+    <meta name="keywords" content="Portfólio, desenvolvedor web, Caraguatatuba, projetos web, habilidades, contato" />
+    <meta property="og:title" content="Portfólio Pedro Mello - Desenvolvedor Web em Caraguatatuba" />
+    <meta property="og:description" content="Portfólio profissional com projetos e habilidades em desenvolvimento web. Saiba mais sobre meu trabalho e entre em contato." />
+    <title>Portfólio Pedro Mello | Desenvolvedor Web em Caraguatatuba</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,11 +39,7 @@
                 Projetos
             </a>
 
-                <a href="logins.php" class="btn btn-primary">
-                    Login
-                </a>
-
-        </div>
+                <a href="admin/logins.php" class="btn btn-primary" title="Acessar painel administrativo">
 
     </div>
 
